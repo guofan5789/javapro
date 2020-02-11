@@ -6,7 +6,7 @@ package com.neuedu.test;
 public class SalesEmployee extends ColaEmployee{
     private int salary;
     @Override
-    public int getSalary(int month) {
+    public double getSalary(int month) {
         return 0;
     }
 }
