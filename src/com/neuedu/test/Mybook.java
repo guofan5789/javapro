@@ -1,16 +1,19 @@
 package com.neuedu.test;
 
+import java.io.Serializable;
+
 /**
- * Created by MacheNike on 2020/2/10.
+ * Created by 13930 on 2020/2/5.
  */
-public class Mybook {
+public class Mybook implements Serializable{
+    private  static final long serialversionUID=1L;
     private String name;
-    private double price;
+    private Double price;
     private String press;
     private String author;
     private String bookISBN;
 
-    public Mybook(String name, double price, String press, String author, String bookISBN) {
+    public Mybook(String name, Double price, String press, String author, String bookISBN) {
         this.name = name;
         this.price = price;
         this.press = press;
@@ -26,11 +29,11 @@ public class Mybook {
         this.name = name;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -57,7 +60,6 @@ public class Mybook {
     public void setBookISBN(String bookISBN) {
         this.bookISBN = bookISBN;
     }
-
 
     @Override
     public String toString() {
